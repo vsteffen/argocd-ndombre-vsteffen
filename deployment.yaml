@@ -25,17 +25,17 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "devapp"
+  name: devapp
 spec:
   rules:
-    - http:
-      host: devapp
+  - host: "devapp"
+    http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: "devapp"
+            name: devapp
             port:
               number: 8888
 
