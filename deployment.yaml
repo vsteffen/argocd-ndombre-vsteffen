@@ -37,7 +37,7 @@ spec:
           service:
             name: devapp
             port:
-              number: 8888
+              number: 80
 
 ---
 
